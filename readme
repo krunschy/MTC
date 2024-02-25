@@ -1,0 +1,6 @@
+Delete from packages;
+Delete  from stack;
+Delete  from trades;
+Delete  from users;
+Delete  from cards;
+to tabula rasa the database, so that it works in combination with the curl script
