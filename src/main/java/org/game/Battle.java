@@ -17,13 +17,13 @@ public class Battle {
     public String determineWinner(){
         int count = 0;
         String result = "draw";
-        while(count<100){
+        while(count<1000){
             deck1.shuffle();
             deck2.shuffle();
             Card topdeck1 = deck1.getFirstCard();
             Card topdeck2 = deck2.getFirstCard();
             Fight Battleround = new Fight(topdeck1, topdeck2);
-            Card winner = Battleround.Winner();
+            Card winner = Battleround.Winner(); //can be null in case of a draw, dann springt einfach keiner der nächsten fälle an
             if(topdeck1.equals(winner)){ //case player1 wins -> the revealed card from p2 (topdeck2) is added to p1 deck, and is removed from p2 deck where it is still the top card
                 deck1.addCard(topdeck2);
                 deck2.removeFirstCard();

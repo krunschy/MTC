@@ -16,16 +16,16 @@ public class Fight {
             if("Water".equals(Attacker.getElement()) && "Fire".equals(Defender.getElement())){
                 multiplier = 2;
             }
-            else if("Fire".equals(Attacker.getElement()) && "Normal".equals(Defender.getElement())){
+            else if("Fire".equals(Attacker.getElement()) && "Regular".equals(Defender.getElement())){
                 multiplier = 2;
             }
-            else if("Normal".equals(Attacker.getElement()) && "Water".equals(Defender.getElement())){
+            else if("Regular".equals(Attacker.getElement()) && "Water".equals(Defender.getElement())){
                 multiplier = 2;
             }
-            else if("Water".equals(Attacker.getElement()) && "Normal".equals(Defender.getElement())){
+            else if("Water".equals(Attacker.getElement()) && "Regular".equals(Defender.getElement())){
                 multiplier = 0.5;
             }
-            else if("Normal".equals(Attacker.getElement()) && "Fire".equals(Defender.getElement())){
+            else if("Regular".equals(Attacker.getElement()) && "Fire".equals(Defender.getElement())){
                 multiplier = 0.5;
             }
             else if("Fire".equals(Attacker.getElement()) && "Water".equals(Defender.getElement())){
@@ -97,5 +97,5 @@ public class Fight {
             fightlog += "Draw\n";
             return null;
         }
-    };
+    }
 }

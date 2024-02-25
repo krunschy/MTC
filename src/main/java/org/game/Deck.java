@@ -33,7 +33,7 @@ public class Deck {
     }
 
     public Card getFirstCard() {
-        return deck.isEmpty() ? null : deck.getFirst();
+        return deck.isEmpty() ? null : deck.get(0);
     }
 
     public void addCard(Card card) {
@@ -42,7 +42,7 @@ public class Deck {
 
     public void removeFirstCard() {
         if (!deck.isEmpty()) {
-            deck.removeFirst();
+            deck.remove(0);
         }
     }
 
