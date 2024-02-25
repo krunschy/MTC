@@ -3,4 +3,11 @@ Delete  from stack;
 Delete  from trades;
 Delete  from users;
 Delete  from cards;
+
+"aa9999a0-734c-49c6-8f4a-651864b14e62"
+"d6e9c720-9b5a-40c7-a6b2-bc34752e3463"
+"d60e23cf-2238-4d49-844f-c7589ee5342e"
+"02a9c76e-b17d-427f-9240-2dd49b0d3bfd"
+are the ids of one guys deck with the curl script. edit these cards if, you want one guy to actually win.
+
 to tabula rasa the database, so that it works in combination with the curl script
