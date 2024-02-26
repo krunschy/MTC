@@ -839,6 +839,11 @@ public class DataBaseFunctions {
             rs = statement.executeQuery();
             rs.next();
             Trader = rs.getString("username");
+
+            if(Trader.equals(username)){
+                return HttpStatus.FORBIDDEN;
+            }
+
             //zu tauschende Karte updaten (also die, die wir hergeben)
             query = "update stack set username = ? where cardid = ?";
             statement=conn.prepareStatement(query);
